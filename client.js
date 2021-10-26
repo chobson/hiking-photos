@@ -1,7 +1,7 @@
 const contentful = require('contentful');
 var client = contentful.createClient({
 space: '8bcjenbuioqi',
-accessToken: '4zfBN9IWHFcmq-3-ERd1f2XW5tBuvPSFsVqslSRjBsU',
+accessToken: process.env.TOKEN,
 })
 var slideIndex = 1;
 
