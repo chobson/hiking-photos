@@ -16,6 +16,7 @@ client
   var buttonsDiv = document.getElementById('buttons');
 
 var negative = document.createElement("a");
+negative.className = "prev"
 negative.id = -1;
 negative.onclick = plusSlides;
 negative.innerHTML = "&#10094;";
@@ -31,7 +32,7 @@ assets.items.forEach(function (asset, index) {
   imageDiv.className = "hikingPhoto fade";
 
   var numberDiv = document.createElement("div");
-  numberDiv.class = "numbertext"
+  numberDiv.className = "numbertext"
   numberDiv.innerHTML = (index+1) + " / " + assets.items.length;
 
   imageDiv.appendChild(imageFile);
@@ -49,6 +50,7 @@ assets.items.forEach(function (asset, index) {
   });
 
 var positive = document.createElement("a");
+positive.className = "next"
 positive.id = 1;
 positive.onclick = plusSlides;
 positive.innerHTML = "&#10095;";
